@@ -44,7 +44,7 @@ public class IndexServlet extends HttpServlet {
 
 //        response.getWriter().append(Integer.valueOf(messages.size()).toString());
 
-
+        request.setCharacterEncoding("UTF-8");
         request.setAttribute("tasks",tasks);
 
         em.close();
